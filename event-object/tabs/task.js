@@ -34,3 +34,8 @@ function initTabs(tabsContainer) {
         }
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const tabContainers = document.querySelectorAll('.tabs');
+    tabContainers.forEach(container => initTabs(container));
+    })
